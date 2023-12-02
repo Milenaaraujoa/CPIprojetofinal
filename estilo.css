@@ -318,11 +318,12 @@ input[type="reset"] {
     background-color: #EA6F07;
     text-align: center;
     width: 120px;
+    margin-bottom: 20px;
     
 }
-    input[type="reset"]{
-        margin-left: 40px;
-    }
+input[type="reset"]{
+    margin-left: 40px;
+}
 
 
     footer{
@@ -347,6 +348,15 @@ input[type="reset"] {
         color:#EA6F07;
     }
 
+.img-logo{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px 150px 0 160px;
+    width: 150px;
+    height: 50px;
+}
 /*Botão Whatsapp*/
 #bt-wpp{
     width: 70px;
