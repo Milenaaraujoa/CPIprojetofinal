@@ -15,10 +15,10 @@
     <nav class="cabecalho">
 		<img class="imgtexto" src="img/logo.png" alt="logo da academia agua vida">
 			<a class="a-menu" href="#">Home</a>
-			<a class="a-menu" href="#">Turmas</a>
-			<a class="a-menu" href="#">Eventos</a>
-			<a class="a-menu" href="#">Formulário</a>
-			<a class="a-menu" href="#">Fale Conosco</a>
+			<a class="a-menu" href="#2">Eventos</a>
+			<a class="a-menu" href="#3">Turmas</a>
+			<a class="a-menu" href="#4">Formulário</a>
+			<a class="a-menu" href="https://www.instagram.com/academia_aguavida/" target="_blank">Fale Conosco</a>
 		
 	</nav>
 	<hr/>
@@ -27,62 +27,81 @@
 	</header>
 	<section>
 		<div>
-			<h1>Calendário</h1>
-			<div>
-				<ul>
-					<li>Novembro de 2023</li>
-					<li>&#10094;</li>
-					<li>&#10095;</li>
-				</ul>
-			</div>
-			<ul>
-				<li>Seg</li>
-				<li>Ter</li>
-				<li>Qua</li>
-				<li>Qui</li>
-				<li>Sex</li>
-				<li>Sab</li>
-				<li>Dom</li>
-			</ul>
-			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				<li>12</li>
-				<li>13</li>
-				<li>14</li>
-				<li>15</li>
-				<li>16</li>
-				<li>17</li>
-				<li>18</li>
-				<li>19</li>
-				<li>20</li>
-				<li>21</li>
-				<li>22</li> 
-				<li>23</li>
-				<li>24</li>
-				<li>25</li>
-				<li>26</li>
-				<li>27</li>
-				<li>28</li>
-				<li>29</li>
-				<li>30</li>
-				<li>31</li>
-			</ul>
-		</div>
+			<h2>CALENDÁRIO</h2>
+			<div class="calendario">
+                <div class="mes-ano">
+                    Novembro de 2023
+                </div>
+                <div class="setas">
+                    <span class="ant-mes" onclick="changeMonth(-1)">❮</span>
+                    <span class="prox-mex" onclick="changeMonth(1)">❯</span>
+                </div>
+                    
+                <table class="nome-mes">
+                  <thead>
+                    <tr>
+                      <th>Mo</th>
+                      <th>Tu</th>
+                      <th>We</th>
+                      <th>Th</th>
+                      <th>Fr</th>
+                      <th>Sa</th>
+                      <th>Su</th>
+                    </tr>
+                  </thead>
+                  <tbody class="dias">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td class="disponivel">9</td>
+                        <td>10</td>
+                        <td class="ocupado">11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td class="inativo">26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 	</section>
 
-    <section>
-        <h2>EVENTOS</h2>
-
+    <section id="2">
+        <h2 class="eventos">EVENTOS</h2>
 
         <div id="eventos">
             <div class="card">
@@ -111,7 +130,7 @@
        
     </section>
 
-    <h2>TURMAS</h2>
+    <h2 id="3">TURMAS</h2>
     <section class="turmas">
         
         <details>
@@ -122,9 +141,7 @@
               <th>Faixa Etária</th>
               <th>Vagas</th>
               <th>Horário</th>
-              
             </tr>
-            <tr>
             <td>Natação para Bebê</td>
             <td>6 meses a 2 anos - acompanhado</td>
             <td>0</td>
@@ -140,9 +157,7 @@
               <th>Faixa Etária</th>
               <th>Vagas</th>
               <th>Horário</th>
-              
             </tr>
-            <tr>
             <td>Adaptação I &amp; II</td>
             <td>Adulto &amp; Infantil</td>
             <td>0</td>
@@ -170,7 +185,7 @@
     </details>
     </section>
 
-    <div class="container">
+    <div  id="4" class="container">
         <h2>Formulário de Inscrição</h2>
         <div class="form-box">
         <form action="" method="">
@@ -186,9 +201,10 @@
             <label for="nivel">Escolha o tipo:</label>
                 <select id="nivel" name="nivel">
                     <option value="Selecione">Selecione</option>
-                    <option value="iniciante">Natação bebê</option>
-                    <option value="basico">Natação</option>
-                    <option value="intermediario">Hidroginástica</option>
+                    <option value="natacao_bb">Natação bebê</option>
+                    <option value="natacao">Natação</option>
+                    <option value="hidro">Hidroginástica</option>
+                    <option value="evento">Evento</option>
                 </select><br/>
 
           
@@ -202,5 +218,8 @@
 <footer>
     <p>Desenvolvido por <a class="fot" href="http://instagram.com/luidybaldez" target="_blank">Luidy Baldez</a>, <a class="fot" href="http://instagram.com/miiandr" target="_blank">Milena de Araujo</a>, <a class="fot" href="http://instagram.com/viiz.sant" target="_blank">Vitoria Santana</a> - 2023</p>
 </footer>
+<div id="bt-wpp">
+    <img class="wpp" src="img/wpp-logo.png">
+</div>
 </body>
 </html>
